@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: #f8f9ff;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-high: #dce9ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #434655;
+  --color-primary: #2563eb;
+  --color-primary-deep: #004ac6;
+  --color-secondary: #0f172a;
+  --color-semantic-green: #16a34a;
+  --color-semantic-red: #dc2626;
+  --color-semantic-amber: #d97706;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums-strict {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+.slashed-zero-code {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+@keyframes scan-beam {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.25;
+  }
+  15% {
+    opacity: 0.95;
+  }
+  85% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(340px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes reticle-pulse {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.012);
+  }
+}
+
+@keyframes micro-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-scan-beam {
+  animation: scan-beam 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-reticle-pulse {
+  animation: reticle-pulse 1.5s ease-in-out infinite;
+}
+
+.animate-micro-shake {
+  animation: micro-shake 0.36s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scan-beam,
+  .animate-reticle-pulse,
+  .animate-micro-shake {
+    animation: none !important;
+  }
+}

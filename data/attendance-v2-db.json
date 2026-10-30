@@ -1,0 +1,45 @@
+{
+  "employees": [
+    {
+      "employeeId": "EMP001",
+      "fullName": "Sarah Al-Farsi",
+      "accountStatus": "Active",
+      "facialEnrollmentStatus": "Pending",
+      "enrolledDescriptors": [],
+      "registrationDate": "2026-10-27",
+      "lastEnrollmentAt": null,
+      "avatarColor": "#2563EB"
+    },
+    {
+      "employeeId": "EMP002",
+      "fullName": "Daniel Okafor",
+      "accountStatus": "Active",
+      "facialEnrollmentStatus": "Pending",
+      "enrolledDescriptors": [],
+      "registrationDate": "2026-10-27",
+      "lastEnrollmentAt": null,
+      "avatarColor": "#0F766E"
+    },
+    {
+      "employeeId": "EMP003",
+      "fullName": "Mei-Ling Chen",
+      "accountStatus": "Active",
+      "facialEnrollmentStatus": "Pending",
+      "enrolledDescriptors": [],
+      "registrationDate": "2026-10-28",
+      "lastEnrollmentAt": null,
+      "avatarColor": "#4338CA"
+    },
+    {
+      "employeeId": "EMP004",
+      "fullName": "Hannah Lindholm",
+      "accountStatus": "Inactive",
+      "facialEnrollmentStatus": "Pending",
+      "enrolledDescriptors": [],
+      "registrationDate": "2026-10-27",
+      "lastEnrollmentAt": null,
+      "avatarColor": "#64748B"
+    }
+  ],
+  "attendanceEvents": []
+}

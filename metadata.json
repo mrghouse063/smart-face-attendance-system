@@ -1,0 +1,6 @@
+{
+  "name": "Smart Attendance System",
+  "description": "Enterprise biometric attendance kiosk, real-time shift verification terminal, employee self-service pass, and administrative timecard audit console.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

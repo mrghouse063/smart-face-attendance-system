@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="112" fill="#16A34A"/>
+  <!-- Corner Scanner Brackets -->
+  <path d="M128 192V152C128 138.745 138.745 128 152 128H192" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <path d="M320 128H360C373.255 128 384 138.745 384 152V192" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <path d="M384 320V360C384 373.255 373.255 384 360 384H320" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <path d="M192 384H152C138.745 384 128 373.255 128 360V320" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <!-- Minimalist Biometric Face & Check -->
+  <circle cx="256" cy="222" r="46" stroke="#FFFFFF" stroke-width="26"/>
+  <path d="M180 338C194 302 222 286 256 286C290 286 318 302 332 338" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+</svg>
